@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Bebas Neue", sans-serif;
+ 
+}
+:root{
+    --bg-color: #080808;
+    --secbgcolor:#131313;
+    --main-color: #5106c1;
+    --text-color: white;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;   
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span {
+    font-size: 3.4rem;
+    text-shadow: 0px 0px 10px var(--main-color);
+}
+nav a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 3rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+nav a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.img img{
+    position: relative;
+    top: 3rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out ;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 30px var(--main-color);  
+}
+.img img:hover{
+   box-shadow: 0 0 25px var(--main-color);
+   box-shadow: 0 0 50px var(--main-color);
+   box-shadow: 0 0 100px var(--main-color);
+}
+.home-content p{
+font-size: 1.6rem;
+font-weight: 500;
+line-height: 1.8;
+max-width: 1000px;
+}
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5 3rem 0rem;
+    transition: 0.3s ease-in-out;
+
+}
+.social-icon a:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.container {
+        background-color: red ;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 3rem 8%;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    .img img {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .img img {
+        width: 55vw;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .social-icon a {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .img img {
+        width: 70vw;
+    }
+
+    .home {
+        gap: 5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .social-icon a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+}
+
