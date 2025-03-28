@@ -27,8 +27,19 @@ body{
     color: var(--text-color);
 
 }
+.android aside {
+margin: 30px 30px;
+    border-radius: 8px 8px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    display: flex
+;
+}
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
