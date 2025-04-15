@@ -328,9 +328,9 @@ max-width: 1000px;
         display: block;
     }
 
-    nav {
+    /*nav {
         display: none;
-    }
+    }*/
 
     .home-content h1 {
         font-size: 4rem;
