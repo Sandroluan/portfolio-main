@@ -9,6 +9,8 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Bebas Neue", sans-serif;
+    -ms-overflow-style: none;   
+    scrollbar-width: none; 
  
 }
 :root{
