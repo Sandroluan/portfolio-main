@@ -1,55 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sandro Luan - Systems Analysis and Development Student. Portfolio showcasing web development projects and skills." />
+    <meta name="keywords" content="portfolio, web development, front-end, HTML, CSS, JavaScript, React" />
+    <meta name="author" content="Sandro Luan" />
+    <meta name="theme-color" content="#5106c1" />
+    <meta name="robots" content="index, follow" />
     <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
-    <title>Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Sandro Luan | Portfolio</title>
   </head>
   <body>
     <header class="header">
       <a href="index.html" class="logo">Sandro <span>Luan</span></a>
-
-      <nav class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="curriculo.html">Resume</a>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="projects.html">Projects</a>
+        <a href="curriculo.html">Resume</a>
       </nav>
     </header>
-    <section id="home" class="home">
-      <div class="home-content">
-        <h1>Hi it's <span>Luan</span></h1>
-        <h3 class="text-animation">
-          I'm a Systems Analysis and Development <span>student</span>
-        </h3>
-        <p>
-          Born and raised in São Paulo, Brazil, i'm a passionate in technologies
-          and coding
-        </p>
-      </div>
+    
+    <main>
+      <section id="home" class="home">
+        <div class="home-content">
+          <h1>Hi, I'm <span>Luan</span></h1>
+          <h2 class="text-animation">
+            Systems Analysis and Development <span>Student</span>
+          </h2>
+          <p>
+            Born and raised in São Paulo, Brazil. Passionate about technology
+            and web development, focusing on creating modern and efficient solutions.
+          </p>
+        </div>
 
-      <div class="social-icon">
-        <a href="https://github.com/Sandroluan" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/sandro-luan-027191301/"
-          target="_blank"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-      </div>
-      <div class="img">
-        <img src="image/stark.jpg" alt="" />
-      </div>
-    </section>
+        <div class="social-icon">
+          <a href="https://github.com/Sandroluan" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Visit my GitHub profile">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sandro-luan-027191301/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Connect with me on LinkedIn">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+        
+        <div class="img">
+          <img src="image/stark.jpg" 
+              alt="Sandro Luan's profile picture" 
+              loading="lazy" />
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <p>site made by Luan</p>
+      <p>&copy; 2025 Sandro Luan. All rights reserved.</p>
     </footer>
   </body>
 </html>
