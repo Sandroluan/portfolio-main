@@ -281,6 +281,11 @@ body {
     margin-top: 3rem;
 }
 
+.personal-info a{
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
 .download-btn {
     display: inline-flex;
     align-items: center;
